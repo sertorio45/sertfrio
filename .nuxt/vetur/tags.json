@@ -1,0 +1,23 @@
+{
+  "App": {
+    "description": "Auto imported from components/App.vue"
+  },
+  "BlogComponent": {
+    "description": "Auto imported from components/BlogComponent.vue"
+  },
+  "Carousel": {
+    "description": "Auto imported from components/Carousel.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "Form": {
+    "description": "Auto imported from components/Form.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "TypebotContact": {
+    "description": "Auto imported from components/TypebotContact.vue"
+  }
+}

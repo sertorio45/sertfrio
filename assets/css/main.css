@@ -1,0 +1,206 @@
+:root {
+
+  --color-primary: #123c51;
+  --color-secondary: #39c;
+  --color-success: #28a745;
+  --color-info: #17a2b8;
+  --color-warning: #ffc107;
+  --color-danger: #dc3545;
+  --color-light: #f8f9fa;
+  --color-dark: #343a40;
+  --color-bg-cta: rgb(27, 97, 132);
+  --branco: #fff;
+
+  --color-bg: #ffffff;
+  --color-text: #000000;
+  --color-link: var(--color-primary);
+  --color-link-hover: rgb(34, 104, 140);
+  
+  --font-family: 'Poppins', sans-serif;
+  --text-size: 14px;
+  --texto-grande: 5rem;
+  --texto-medio: 2rem;
+  --texto-pequeno: 1.25rem;
+
+}
+
+.vs-con-textarea h4 {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  padding: 8px;
+  padding-bottom: 8px;
+  padding-bottom: 0;
+  cursor: default;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+  border-radius: 5px 5px 0 0;
+}
+
+.vs-select--label {
+  font-size: 14px !important;
+  color: rgba(0,0,0,.6);
+}
+
+body {
+  background-color: var(--color-bg) !important;
+  color: var(--color-text) !important;
+  font-family: var(--font-family) !important;
+  font-size: var(--text-size) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-text) !important;
+}
+
+h3 {
+  font-size: var(--texto-pequeno) !important;
+}
+
+h4 {
+  font-size: 1rem !important;
+  font-weight: bold !important;
+}
+
+img {
+  border-radius: 10px;
+}
+
+a {
+  color: var(--color-link) !important;
+  font-size: var(--text-size) !important;
+}
+
+a:hover {
+  color: var(--color-link-hover) !important;
+}
+
+.btn {
+  color: var(--branco) !important;
+  border-radius: 100px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  font-size: var(--text-size) !important;
+  margin-left: 0.5em !important;
+  margin-right: 0.5em !important;
+}
+
+.btn-primary {
+  background-color: var(--color-secondary) !important;
+  color: var(--branco) !important;
+  border: 2px solid var(--color-secondary) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-link-hover) !important;
+  color: var(--branco) !important;
+}
+
+.btn-primary-border {
+  background-color: transparent !important;
+  color: var(--color-secondary) !important;
+  border: 2px solid var(--color-secondary) !important;
+}
+
+.btn-primary-border:hover {
+  background-color: var(--color-link-hover) !important;
+  color: var(--branco) !important;
+}
+
+.btn-white {
+  background-color: var(--branco) !important;
+  color: var(--color-primary) !important;
+  border: 2px solid var(--branco) !important;
+}
+
+.btn-white:hover {
+  background-color: var(--color-dark) !important;
+  color: var(--color-primary) !important;
+  border: 2px solid var(--color-success) !important;
+}
+
+.btn-back {
+  background-color: transparent !important;
+  color: var(--color-dark) !important;
+  border: 2px solid var(--color-dark) !important;
+}
+
+.btn-back:hover {
+  border: 2px solid var(--color-secondary) !important;
+  color: var(--color-secondary) !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+/* Estilo para gscard */
+.gscard-border {
+  border-radius: 10px !important;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3) !important;
+
+ }
+.gscard {
+  padding: 2rem !important;
+  margin: 5px !important;
+  align-content: center !important;
+  justify-content: center !important;
+  height: auto !important;
+  opacity: 0;
+  transform: translateY(-20px);
+  filter: blur(10px);
+}
+
+.gscard.animate {
+  animation: fadeInDownBlur 1s forwards; 
+}
+
+
+@keyframes fadeInDownBlur {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+    filter: blur(10px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0); 
+  }
+}
+
+.bg-cta { background-color: var(--color-bg-cta) !important; }
+
+.min-vh-50 { 
+  height: 50vh !important;
+}
+
+em {
+  font-style: normal !important;
+  background: linear-gradient(270deg, var(--color-primary), var(--color-secondary), var(--color-primary));
+  background-size: 600% 600% !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  animation: gradientAnimation 5s ease infinite !important;
+  display: inline-block;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+em + em {
+  background: linear-gradient(270deg, var(--color-secondary), var(--color-primary), var(--color-secondary)) !important;
+  background-size: 600% 600% !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  animation: gradientAnimation 5s ease infinite reverse !important;
+  display: inline-block;
+}

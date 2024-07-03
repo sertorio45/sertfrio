@@ -1,0 +1,29 @@
+[
+  {
+    "name": "contato",
+    "path": "/contato",
+    "component": "/Users/giovannisertorio/Desktop/Sites/sertfrio/pages/contato.vue",
+    "chunkName": "pages/contato",
+    "_name": "_5f2f76f6"
+  },
+  {
+    "name": "artigos-slug",
+    "path": "/artigos/:slug?",
+    "component": "/Users/giovannisertorio/Desktop/Sites/sertfrio/pages/artigos/_slug.vue",
+    "chunkName": "pages/artigos/_slug",
+    "_name": "_73f94b0a"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/giovannisertorio/Desktop/Sites/sertfrio/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_39be07ed"
+  },
+  {
+    "name": "contato",
+    "path": "/contato",
+    "component": "/Users/giovannisertorio/Desktop/Sites/sertfrio/pages/contato.vue",
+    "_name": "_5f2f76f6"
+  }
+]
