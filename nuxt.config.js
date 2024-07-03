@@ -1,6 +1,13 @@
 import bodyParser from 'body-parser';
 
 export default {
+  loading: {
+    color: 'var(--color-primary) !important', // Define a cor da barra de carregamento
+    height: '3px', // Define a altura da barra de carregamento
+    continuous: true, // Exibe a barra de carregamento continuamente
+    duration: 5000, // Tempo máximo em milissegundos que a barra de carregamento será exibida
+    rtl: false, // Define a direção da barra de carregamento (direita para esquerda)
+  },
   // Configurações do cabeçalho da página
   head: {
   title: 'SertFrio - Instalação manutenção e limpeza de ar-condicionado - Sertãozinho e região',
@@ -58,7 +65,7 @@ export default {
 
   // Configuração do Axios
   axios: {
-    baseURL: process.env.VITE_STRAPI_URL || 'http://localhost:1337'
+    baseURL: process.env.VITE_STRAPI_URL
   },
 
   // Configuração do roteamento

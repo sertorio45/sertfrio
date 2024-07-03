@@ -8,7 +8,6 @@ You can directly use them in pages and other components without the need to impo
 
 - `<App>` | `<app>` (components/App.vue)
 - `<BlogComponent>` | `<blog-component>` (components/BlogComponent.vue)
-- `<Carousel>` | `<carousel>` (components/Carousel.vue)
 - `<Footer>` | `<footer>` (components/Footer.vue)
 - `<Form>` | `<form>` (components/Form.vue)
 - `<Header>` | `<header>` (components/Header.vue)

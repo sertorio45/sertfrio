@@ -3,14 +3,13 @@
     <main>
       <!-- Topo -->
       <section class="d-flex align-items-center min-vh-100" id="index">
-        <div class="container text-center">
-          <div class="row">
+        <div class="container-fluid bg-img d-flex flex-column justify-content-center align-items-center text-center">
+          <div class="row text-topo">
             <div class="col">
-              <h1>Aumente a <em>performance</em> da sua <em>empresa.</em></h1>
-              <p class="my-4">Destaque sua empresa à frente de seus concorrentes com estratégias de branding, marketing e tecnologia.</p>
+              <h1><em>Aqui vai a frase principal</em></h1>
+              <p class="my-4">Aqui vai outra frase</p>
               <div class="d-flex justify-content-center">
-                <button @click="scrollToElement('#sobre')" class="btn btn-primary">Nos conheça um pouco</button>
-                <button @click="scrollToElement('./contato')" class="btn btn-primary-border">Entre em contato rapidamente</button>
+                <button @click="scrollToElement('#sobre')" class="btn btn-primary">Conheça nossos serviços</button>
               </div>
             </div>
           </div>
@@ -18,45 +17,35 @@
       </section>
       <!-- Topo -->
 
-      <!-- Quem somos -->
+     <!-- Quem somos -->
       <section class="d-flex align-items-center bg-light py-5" id="sobre">
-        <div class="container">
-          <div class="row">
-            <div class="col-5">
-              <h2>Somos especialistas</h2>
-              <p class="my-3 d-block">
-                Design publicitário, marketing online/offline e websites.
-                Na GS STUDIO, combinamos criatividade e estratégias comprovadas para desenvolver campanhas de marketing eficazes e impactantes.
-                Nossos especialistas em tecnologia oferecem soluções personalizadas para maximizar a eficiência do seu negócio.
-              </p>
-              <!-- <button @click="scrollToElement('#index')" class="btn btn-primary">Nos conheça um pouco</button> -->
-            </div>
-
-            <div class="col-7 text-center align-content-center content-justify-center px-5">
-              <div>
-                <div class="d-flex">
-                  <div class="col-4 gscard gscard-border gscard gscard-border-border">
-                    <img :src="designIcon" class="img-fluid p-3" alt="Design" loading="lazy" />
-                    <h3>Design</h3>
-                    <a href="#none">Saiba mais</a>
-                  </div>
-                  <div class="col-4 gscard gscard-border">
-                    <img :src="marketingIcon" class="img-fluid p-3" alt="Marketing" loading="lazy" />
-                    <h3>Marketing</h3>
-                    <a href="#none">Saiba mais</a>
-                  </div>
-                  <div class="col-4 gscard gscard-border">
-                    <img :src="technologyIcon" class="img-fluid p-3" alt="Tecnologia" loading="lazy" />
-                    <h3>Tecnologia</h3>
-                    <a href="#none">Saiba mais</a>
-                  </div>
-                </div>
+          <div id="sec_services" class="container text-center">
+            <div class="row align-items-center">
+              <!-- Serviços residenciais -->
+              <div class="col-6 p-5">
+                <img src="https://placehold.co/350x350" alt="Sobre a empresa" class="img-fluid">
+                <h2>Serviços residenciais</h2>
+                <p>
+                  Lorem Ipsum é simplesmente uma simulação de texto da indústria
+                  tipográfica e de impressos, e vem sendo utilizado.
+                </p>
+                <button type="button" class="btn btn-primary">Conheça nossos serviços</button>
+              </div>
+              <!-- Serviços comerciais -->
+              <div class="col-6 p-5">
+                <img src="https://placehold.co/350x350" alt="Sobre a empresa" class="img-fluid">
+                <h2>Serviços comerciais</h2>
+                <p>
+                  Lorem Ipsum é simplesmente uma simulação de texto da indústria
+                  tipográfica e de impressos, e vem sendo utilizado.
+                </p>
+                <button type="button" class="btn btn-primary">Conheça nossos serviços</button>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
       <!-- Quem somos -->
+
 
       <!-- Conquistas -->
       <section class="py-5 text-center" id="conquistas">
@@ -98,7 +87,7 @@
             <h2>Parceiros e clientes</h2>
             <div id="app">
               <div class="col">
-                <carousel></carousel>
+                <!-- <carousel></carousel> -->
               </div>
             </div>
           </div>
@@ -263,15 +252,37 @@ export default {
 </script>
 
 <style scoped>
-#index h1 {
+/* #index h1 {
   font-size: var(--texto-grande);
 }
 #index p {
   font-size: var(--texto-medio) !important;
+} */
+
+.text-topo {
+    bottom: 100px;
+    position: absolute;
+}
+
+.bg-img {
+    background-image: url(@/assets/img/bgar.webp) !important;
+    background-position: 50%;
+    background-size: cover;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #000;
+    color: var(--text-color);
+    margin: -120px 0 0;
 }
 
 #sobre img {
-  width: 100px !important;
+  width: 250px !important; 
+  margin-bottom: 20px;
 }
 
 #conquistas h3 {

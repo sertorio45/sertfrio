@@ -1,7 +1,6 @@
 :root {
-
-  --color-primary: #123c51;
-  --color-secondary: #39c;
+  --color-primary: #39c;
+  --color-secondary: #123c51;
   --color-success: #28a745;
   --color-info: #17a2b8;
   --color-warning: #ffc107;
@@ -21,7 +20,6 @@
   --texto-grande: 5rem;
   --texto-medio: 2rem;
   --texto-pequeno: 1.25rem;
-
 }
 
 .vs-con-textarea h4 {
@@ -29,7 +27,6 @@
   font-weight: 400 !important;
   padding: 8px;
   padding-bottom: 8px;
-  padding-bottom: 0;
   cursor: default;
   -webkit-transition: all .25s ease;
   transition: all .25s ease;
@@ -137,8 +134,8 @@ a:hover {
 .gscard-border {
   border-radius: 10px !important;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3) !important;
+}
 
- }
 .gscard {
   padding: 2rem !important;
   margin: 5px !important;
@@ -151,27 +148,28 @@ a:hover {
 }
 
 .gscard.animate {
-  animation: fadeInDownBlur 1s forwards; 
+  animation: fadeInDownBlur 1s forwards;
 }
-
 
 @keyframes fadeInDownBlur {
   from {
     opacity: 0;
     transform: translateY(-20px);
-    filter: blur(10px); 
+    filter: blur(10px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
-    filter: blur(0); 
+    filter: blur(0);
   }
 }
 
-.bg-cta { background-color: var(--color-bg-cta) !important; }
+.bg-cta { 
+  background-color: var(--color-bg-cta) !important; 
+}
 
 .min-vh-50 { 
-  height: 50vh !important;
+  height: 50vh !important; 
 }
 
 em {
